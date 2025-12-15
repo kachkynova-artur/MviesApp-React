@@ -1,0 +1,89 @@
+/* Контейнер списка корзины */
+.basket-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Карточка заказа */
+.basket-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.basket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Заголовок карточки */
+.basket-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Содержимое карточки */
+.basket-card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Кнопки в карточке */
+.basket-card .actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-card button,
+.basket-card a {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.basket-card button.delete {
+  background-color: #dc3545;
+  border: none;
+}
+
+.basket-card button.delete:hover {
+  background-color: #c82333;
+}
+
+.basket-card a.edit {
+  background-color: #007bff;
+}
+
+.basket-card a.edit:hover {
+  background-color: #0056b3;
+}
+
+/* Кнопка добавления нового заказа */
+.add-order-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-order-btn:hover {
+  background-color: #218838;
+}
