@@ -19,6 +19,11 @@ import UpdateOrder from './pages/update_order';
 
 import './App.css';
 
+// login 
+import Login from './pages/login';
+import Register from './pages/register';
+import Contacts from './pages/contacts';
+
 function App() {
   const [orders, setOrders] = useState([
     { id: 1, name: 'Заказ 1' },
@@ -49,6 +54,9 @@ function App() {
             <Route path="/basket/:id" element={<BasketDetail orders={orders} />} />
             <Route path="/create-order" element={<CreateOrder addOrder={addOrder} />} />
             <Route path="/update-order/:id" element={<UpdateOrder orders={orders} updateOrder={updateOrder} />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>
 
